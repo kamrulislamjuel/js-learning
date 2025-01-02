@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript is Fun 😀</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body onload="onLoad()">
+		<h1 id="title">JavaScript is Fun 😀</h1>
+		<button onclick="subscribe()" id="btn">Subscribe</button>
+		<h2 id="text"></h2>
+
+		<button ondblclick="subscribe2()" id="btn2">Subscribe</button>
+		<h2 id="text2"></h2>
+
+		<button oncontextmenu="subscribe3()" id="btn3">Subscribe</button>
+		<h2 id="text3"></h2>
+
+		<button onmouseenter="subscribe4()" id="btn4">Subscribe</button>
+		<h2 id="text4"></h2>
+
+		<button onmouseout="subscribe5()" id="btn5">Subscribe</button>
+		<h2 id="text5"></h2>
+
+		<button id="like" onclick="like()">
+			<i class="fa-regular fa-thumbs-up"></i>like
+		</button>
+
+		<h2 id="text7"></h2>
+		<h2 id="text6"></h2>
+
+		<form action="" id="form" onkeypress="keyPress();">
+			<label for="">name</label>
+			<input type="text" placeholder="Enter Your Name" />
+			<label for="">Email</label>
+			<input type="email" placeholder="Enter Your Email" />
+			<label for="">Message</label>
+			<textarea placeholder="Enter Your Message"></textarea>
+			<input type="submit" value="Send Message" />
+		</form>
+
+		<script src="app.js"></script>
+	</body>
+</html>
